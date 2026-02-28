@@ -18,7 +18,7 @@ app.use(cors({
 app.use(express.json());
 
 
-app.get('/test',(req,res)=>{
+app.get('/',(req,res)=>{
     res.json({
         msg:'welcome to home page'
     })
