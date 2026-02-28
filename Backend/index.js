@@ -6,19 +6,16 @@ const mongoose=require('mongoose')
 const errorController=require('./controller/error')
 const router=require('./Routes/todoRoute')
 
-
-dotenv.config();
-
-const app=express();
-
-import cors from "cors"
-
 app.use(
   cors({
     origin: "https://todo-ui-opal.vercel.app",
     credentials: true
   })
 )
+dotenv.config();
+
+const app=express();
+
 app.use(express.json());
 
 
