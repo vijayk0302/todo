@@ -8,8 +8,8 @@ const router=require('./Routes/todoRoute')
 
 app.use(
   cors({
-    origin: "https://todo-ui-opal.vercel.app",
-    credentials: true
+    origin: "*",
+    
   })
 )
 dotenv.config();
