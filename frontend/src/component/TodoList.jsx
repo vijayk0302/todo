@@ -31,7 +31,7 @@ const handleEdit=(item)=>{
           className="m-4 lg:w-full md:w-full min-h-fit p-4 shadow-lg rounded-lg bg-white"
         >
           <div className="mb-3 flex justify-between items-center">
-            <h3 className={` text-2xl font-semibold ${ item.completed ? 'line-through text-gray-400' : ''}`} >
+            <h3 className={` text-2xl text-[#4c0519] font-semibold ${ item.completed ? 'line-through text-gray-400' : ''}`} >
             {item.task}
             </h3>
             <div className=' flex gap-3'>

@@ -5,16 +5,16 @@ const dotenv=require('dotenv')
 const mongoose=require('mongoose')
 const errorController=require('./controller/error')
 const router=require('./Routes/todoRoute')
+const app=express();
 
 app.use(
   cors({
-    origin: "https://todo-ui-opal.vercel.app",
-    credentials: true
+    origin: "*",
+    
   })
 )
 dotenv.config();
 
-const app=express();
 
 app.use(express.json());
 

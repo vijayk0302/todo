@@ -59,7 +59,7 @@ const Todo = () => {
     <div className='flex min-h-fit md:flex-row flex-col'>
       <div className="lg:w-1/3 md:w-1/2 sm:w-fit ">
         <div className="m-10 border shadow-lg rounded-lg">
-          <h1 className="text-3xl mt-2 text-center font-bold">Add Task</h1>
+          <h1 className="text-3xl text-[#4c0519] mt-2 text-center font-bold">Add Task</h1>
           <form onSubmit={handlesubmit}>
             <div className="my-8 mx-3">
               <input value={todoitems.task}
@@ -67,7 +67,7 @@ const Todo = () => {
                   SetTodoitems({ ...todoitems, task: e.target.value })
 
 
-                }} className="w-full border focus:border-transparent rounded-sm focus:ring-2 focus:ring-[#F43F5E] outline-none p-2" type="text" placeholder="Enter tasks..." />
+                }} className="w-full border text-[#4c0519] focus:border-transparent rounded-sm focus:ring-2 focus:ring-[#F43F5E] outline-none p-2" type="text" placeholder="Enter tasks..." />
               <input
                 value={todoitems.description} onChange={(e) => {
                   SetTodoitems({ ...todoitems, description: e.target.value })
@@ -79,12 +79,12 @@ const Todo = () => {
                 onChange={(e) => {
                   SetTodoitems({...todoitems,  date: e.target.value })
                 }}
-                className="w-full border focus:border-transparent rounded-sm focus:ring-2 focus:ring-[#F43F5E] outline-none p-2 mt-4" type="date" />
+                className="w-full border text-[#4c0519] focus:border-transparent rounded-sm focus:ring-2 focus:ring-[#F43F5E] outline-none p-2 mt-4" type="date" />
             </div>
             <div className="flex gap-2.5 p-2 justify-center">
               <button
                 type="submit"
-                className="px-4 py-2 cursor-pointer bg-[#F43F5E] text-white rounded hover:bg-[#E11D48] transition"
+                className="px-4 text-white py-2 cursor-pointer bg-[#F43F5E]  rounded hover:bg-[#E11D48] transition"
               >
                 Add
               </button>
@@ -98,14 +98,14 @@ const Todo = () => {
           </form>
         </div>  
         <div className='m-10 p-5 border shadow-lg rounded-lg '> 
-          <span>Search tasks <CiSearch className='inline text-lg font-bold' /> </span>
+          <span className='text-[#4c0519]'>Search tasks <CiSearch className='inline text-lg font-bold' /> </span>
           <input onChange={handlesearch} placeholder='Search.....' className='block w-full p-2 mt-4 border focus:border-transparent rounded-sm focus:ring-2 focus:ring-[#F43F5E] outline-none' type="text" />
         </div>
       </div>
 
       <div className="lg:w-2/3 md:w-1/2 sm:w-fit">
         <div className="m-10 shadow-lg rounded-lg">
-          <h3 className="py-2 text-center">Your task</h3>
+          <h3 className="py-2 font-bold text-center">Your task</h3>
         </div>
         <div className="m-4 p-2  min-h-fit rounded-lg grid gap-1 lg:grid-cols-2 md:grid-cols-1">
           {todos.length === 0 ? (

@@ -20,7 +20,7 @@ const Popup = ({ setShow ,fetch ,popcontent ,setPopcontent  }) => {
             <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50">
                 <div className="bg-white w-full max-w-md p-6 rounded shadow relative">
                     <div className="flex justify-between items-center">
-                        <h1 className="text-lg font-semibold">Update Task</h1>
+                        <h1 className="text-lg text-[#4c0519] font-semibold">Update Task</h1>
                         <RxCross1 onClick={() => setShow(false)} className="cursor-pointer text-xl" />
                     </div>
                     <form onSubmit={handlesubmit} className="mt-4" >
