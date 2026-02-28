@@ -8,7 +8,7 @@ const router=require('./Routes/todoRoute')
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://todo-api-liart-mu.vercel.app",
     
   })
 )
