@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://todo-api-one-rho.vercel.app",
+  baseURL: "https://todo-api-liart-mu.vercel.app/",
   withCredentials: true, 
 });
 
