@@ -5,7 +5,6 @@ const dotenv=require('dotenv')
 const mongoose=require('mongoose')
 const errorController=require('./controller/error')
 const router=require('./Routes/todoRoute')
-const app=express();
 
 app.use(
   cors({
@@ -15,6 +14,7 @@ app.use(
 )
 dotenv.config();
 
+const app=express();
 
 app.use(express.json());
 
