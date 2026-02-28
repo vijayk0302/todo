@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router'
-import '../app.css'
+
 
 const Navbar = () => {
     return (
